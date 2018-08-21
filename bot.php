@@ -1,9 +1,5 @@
 <?php
 
-$messages = ['type' => 'text','text' => 'Hi ja'];
-$data = ['replyToken' => '123','messages' => [$messages],];
-echo json_encode($data);
-
 $access_token = 'iZoNnaTJ1SersZhobYnkptT1Vk2y1dTe4y9vT/LBPIf5WrhDJVobFBw7k0UPWcW8rp1pvCWI4L+TF78PQfn86b9/xRB8ci86Edcrqp73Kzfp7q7Mg2C4JTO8s2jiNBmymOuVa9/c14CQEZTGxloWOQdB04t89/1O/w1cDnyilFU=';// Get POST body content
 $content = file_get_contents('php://input');// Parse JSON
 $events = json_decode($content, true);// Validate parsed JSON data
